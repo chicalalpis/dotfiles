@@ -1,0 +1,4 @@
+alias la="ls -a"
+alias ll="ls -al"
+alias mkdir="mkdir -p" # サブディレクトリごと作成
+alias less="less -r"
