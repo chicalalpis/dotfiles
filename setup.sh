@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOTFILES=( zshrc zsh.func zsh.alias gitconfig)
+DOTFILES=( zshrc zsh.func zsh.alias gitconfig vimrc)
 
 for file in ${DOTFILES[@]}
 do
