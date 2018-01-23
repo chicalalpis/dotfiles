@@ -1,5 +1,5 @@
 ## language
-export LANG=ja.UTF-8
+export LANG=ja_JP.UTF-8
 
 ## colors
 autoload -Uz colors; colors

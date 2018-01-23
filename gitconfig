@@ -10,7 +10,6 @@
   pushf = push --force-with-lease
   st = status
 [core]
-  quotepath = false
   pager = less -r
   editor = vim
 [include]
