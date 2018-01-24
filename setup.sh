@@ -1,15 +1,17 @@
 #!/bin/bash
 
 GITHUB_URL="https://github.com/chicalalpis/dotfiles"
-DOTPATH=~/.dotfiles
+DOTPATH=~/dotfiles
 
-if has "git"; then
+i
+if type "コマンド" > /dev/null 2>&1; then
   git clone --recursive "$GITHUB_URL" "$DOTPATH"
 else
-  die "failed to do git command"
+  echo "failed to do git command"
+  exit 1
 fi
 
-cd ~/.dotfiles
+cd ~/dotfiles
 
 DOTFILES=( zshrc zsh.func zsh.alias gitconfig vimrc)
 
