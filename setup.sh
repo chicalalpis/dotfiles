@@ -3,7 +3,6 @@
 GITHUB_URL="https://github.com/chicalalpis/dotfiles"
 DOTPATH=~/dotfiles
 
-i
 if type git > /dev/null 2>&1; then
   git clone --recursive "$GITHUB_URL" "$DOTPATH"
 else
