@@ -39,11 +39,15 @@ zstyle ':completion:*' group-name ''
 
 ## git
 autoload -Uz vcs_info
-zstyle 'vsc_info:*' enable git svn
-zstyle 'vsc_info:*' formats '%'${fg[red]}'%}[%s %b] %{'reset_color'%}'
+zstyle ':vsc_info:*' enable git svn
+zstyle ':vcs_info:*' formats '%{'${fg[red]}'%}[%s %b] %{'$reset_color'%}'
 
 ## prompt
-precmd() { vcs_info }
+precmd() { 
+  vcs_info
+  # note: vcs_info_msg_0_はprecmd前じゃないとうまくいかない 
+  RPROMPT=" ${vcs_info_msg_0_}"
+}
 setopt re_match_pcre
 setopt prompt_subst # promptの複数行を許可
 PROMPT="
@@ -51,7 +55,6 @@ PROMPT="
 %(?.%{$fg[green]%}.%{$fg[cyan]%})%(?!｜_・%) <!｜_＜%) <)%{${reset_color}%} "
 PROMPT2='[%n]> '
 SPROMPT="%{$fg[red]%}%{$suggest%}｜д･%%) < %B%r%b %{$fg[red]%}? [ynae]:${reset_color} "
-RPROMPT=" ${vcs_info_msg_0_}"
 
 source ~/.zsh.alias
 source ~/.zsh.func

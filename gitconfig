@@ -7,8 +7,10 @@
   ll = log --stat --decorate=short --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   lga = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   co = checkout
+  cm = commit -m
   pushf = push --force-with-lease
   st = status
+  ss = status -s
 [core]
   pager = less -r
   editor = vim
