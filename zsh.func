@@ -1,7 +1,5 @@
 chpwd() {
   ls_abbrev
-  # change tab name of iTerm
-  echo -ne "\033]0;$(pwd | rev | cut -c 1-16 | rev)\007"
 }
 ls_abbrev() {
   if [[ ! -r $PWD ]]; then
