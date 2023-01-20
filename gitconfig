@@ -9,7 +9,18 @@
   lga = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   co = checkout
   cm = commit -m
+  drag = pull --rebase
   pushf = push --force-with-lease
+  ri = rebase -i HEAD~
+  rii = rebase -i HEAD~~
+  riii = rebase -i HEAD~~~
+  riiii = rebase -i HEAD~~~~
+  riiiii = rebase -i HEAD~~~~~
+  riiiiii = rebase -i HEAD~~~~~~
+  riiiiiii = rebase -i HEAD~~~~~~~
+  riiiiiiii = rebase -i HEAD~~~~~~~~
+  riiiiiiiii = rebase -i HEAD~~~~~~~~~
+  riiiiiiiiii = rebase -i HEAD~~~~~~~~~~
   st = status -s
 
 [core]
