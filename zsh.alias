@@ -1,4 +1,8 @@
-alias la="ls -a"
-alias ll="ls -al"
+alias ls="exa"
+alias la="exa --all"
+alias ll="exa --all --long"
+alias tree="exa --tree"
 alias mkdir="mkdir -p" # サブディレクトリごと作成
 alias less="less -r"
+alias cat="bat -pP"
+alias grep="rg"

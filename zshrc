@@ -45,5 +45,6 @@ zstyle ':vcs_info:*' formats '%{'${fg[red]}'%}[%s %b] %{'$reset_color'%}'
 # path
 eval $(/opt/homebrew/bin/brew shellenv)
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
 
 source ~/.zsh.alias

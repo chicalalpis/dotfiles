@@ -26,7 +26,7 @@ do
 done
 
 # setup homebrew
-if [ $(uname) == 'Darwin' ]; then
+if [ $(uname) = 'Darwin' ]; then
   command -v brew >/dev/null 2>&1 || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
   brew update --verbose
   brew upgrade --verbose

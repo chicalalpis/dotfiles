@@ -11,10 +11,31 @@
   cm = commit -m
   pushf = push --force-with-lease
   st = status -s
+
 [core]
-  pager = less -r
+  pager = delta
   editor = vim
+
+[delta]
+  side-by-side = true
+  line-numbers = true
+  navigate = true
+  light = false
+
+[diff]
+  colorMoved = default
+
 [include]
   path = ~/.gitconfig.local
+
+[interactive]
+  diffFilter = delta --color-only
+
+[merge]
+  conflictstyle = diff3
+
 [push]
   default = current
+
+[sequence]
+  editor = interactive-rebase-tool
