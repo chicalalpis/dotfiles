@@ -56,5 +56,8 @@ PROMPT="
 PROMPT2='[%n]> '
 SPROMPT="%{$fg[red]%}%{$suggest%}｜д･%%) < %B%r%b %{$fg[red]%}? [ynae]:${reset_color} "
 
+# path
+eval $(/opt/homebrew/bin/brew shellenv)
+
 source ~/.zsh.alias
 source ~/.zsh.func
