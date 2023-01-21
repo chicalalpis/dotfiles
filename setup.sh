@@ -1,6 +1,7 @@
 #!/bin/bash
 
 GITHUB_URL="https://github.com/chicalalpis/dotfiles"
+DOTPATH=~/dotfiles
 
 cd ~
 
@@ -18,9 +19,9 @@ else
 fi
 
 # add dotfiles symbolic link
-ln -sf ~/dotfiles/.zshenv ~/.zshenv
+ln -sf $DOTPATH/.zshenv ~/.zshenv
 find .config -type d | xargs -IXXX mkdir -p ~/XXX
-find .config -type f | xargs -IXXX ln -sf ~/dotfiles/XXX ~/XXX
+find .config -type f | xargs -IXXX ln -sf $DOTPATH/XXX ~/XXX
 
 # setup homebrew
 if [ $(uname) = 'Darwin' ]; then
