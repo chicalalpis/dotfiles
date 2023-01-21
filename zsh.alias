@@ -1,8 +1,14 @@
-alias ls="exa"
-alias la="exa --all"
-alias ll="exa --all --long"
-alias tree="exa --tree"
-alias mkdir="mkdir -p" # サブディレクトリごと作成
-alias less="less -r"
-alias cat="bat -pP"
-alias grep="rg"
+ABBR_FORCE=1
+ABBR_QUIET=1
+
+abbr -S ls="exa"
+abbr -S la="exa --all"
+abbr -S ll="exa --all --long"
+abbr -S tree="exa --tree"
+abbr -S mkdir="mkdir -p" # サブディレクトリごと作成
+abbr -S less="less -r"
+abbr -S cat="bat -pP"
+abbr -S grep="rg"
+
+ABBR_FORCE=0
+ABBR_QUIET=0
