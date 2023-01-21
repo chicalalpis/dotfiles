@@ -47,4 +47,4 @@ eval "$(zoxide init zsh)"
 source /opt/homebrew/share/zsh-abbr/zsh-abbr.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-source ~/.zsh.alias
+source ~/.config/zsh/.zsh.alias

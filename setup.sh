@@ -19,11 +19,9 @@ else
 fi
 
 # add dotfiles symbolic link
-DOTFILES=( zshrc zsh.func zsh.alias gitconfig vimrc )
-for file in ${DOTFILES[@]}
-do
-  ln -sf ~/dotfiles/$file ~/.$file
-done
+ln -sf ~/dotfiles/.zshenv ~/.zshenv
+find .config -type d | xargs -IXXX mkdir -p ~/XXX
+find .config -type f | xargs -IXXX ln -sf XXX ~/XXX
 
 # setup homebrew
 if [ $(uname) = 'Darwin' ]; then
