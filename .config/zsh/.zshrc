@@ -5,7 +5,7 @@ export LANG=ja_JP.UTF-8
 autoload -Uz colors; colors
 
 ## history
-export HISTFILE=~/.zsh_history
+export HISTFILE=~/.config/zsh/.zsh_history
 export HISTSIZE=100000
 export SAVEHIST=100000
 
@@ -24,9 +24,8 @@ setopt pushd_ignore_dups
 setopt share_history
 
 ## autocomp
-FPATH=/opt/homebrew/share/zsh-completions:$FPATH
+FPATH=$HOMEBREW_PREFIX/share/zsh-completions:$FPATH
 autoload -U compinit; compinit
-rm -f ~/.zcompdump; compinit
 zstyle ':completion:*' completer _expand _complete _match _prefix _approximate _list _history
 zstyle ':completion:*' list-colors ''
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
@@ -41,10 +40,10 @@ zstyle ':completion:*:warnings' format 'No matches for:'$fg[yellow]' %d'${reset_
 zstyle ':completion:messages' format '%d'
 
 # path
-eval $(/opt/homebrew/bin/brew shellenv)
+eval $($HOMEBREW_PREFIX/bin/brew shellenv)
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
-source /opt/homebrew/share/zsh-abbr/zsh-abbr.zsh
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOMEBREW_PREFIX/share/zsh-abbr/zsh-abbr.zsh
+source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 source ~/.config/zsh/.zsh.alias
