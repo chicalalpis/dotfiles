@@ -20,8 +20,9 @@ fi
 
 # add dotfiles symbolic link
 ln -sf $DOTPATH/.zshenv ~/.zshenv
-find .config -type d | xargs -IXXX mkdir -p ~/XXX
-find .config -type f | xargs -IXXX ln -sf $DOTPATH/XXX ~/XXX
+mkdir -p ~/.config
+find $DOTPATH/.config -type d | xargs -IXXX mkdir -p ~/XXX
+find $DOTPATH/.config -type f | xargs -IXXX ln -sf $DOTPATH/XXX ~/XXX
 
 # setup homebrew
 if [ $(uname) = 'Darwin' ]; then
