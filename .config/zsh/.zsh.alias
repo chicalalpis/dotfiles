@@ -1,14 +1,14 @@
 ABBR_FORCE=1
 ABBR_QUIET=1
 
-abbr -S ls="exa"
-abbr -S la="exa --all"
-abbr -S ll="exa --all --long"
-abbr -S tree="exa --tree"
-abbr -S mkdir="mkdir -p" # サブディレクトリごと作成
-abbr -S less="less -r"
-abbr -S cat="bat -pP"
-abbr -S grep="rg"
+abbr -S ls="exa" > /dev/null
+abbr -S la="exa -a" > /dev/null
+abbr -S ll="exa --al" > /dev/null
+abbr -S tree="exa --tree" > /dev/null
+abbr -S mkdir="mkdir -p" > /dev/null
+abbr -S less="less -r" > /dev/null
+abbr -S cat="bat -pP" > /dev/null
+abbr -S grep="rg" > /dev/null
 
 ABBR_FORCE=0
 ABBR_QUIET=0
