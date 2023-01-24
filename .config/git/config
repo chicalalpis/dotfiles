@@ -37,7 +37,7 @@
   colorMoved = default
 
 [include]
-  path = ./config.local
+  path = ~/.config/git/config.local
 
 [interactive]
   diffFilter = delta --color-only
