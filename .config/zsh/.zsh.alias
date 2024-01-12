@@ -1,10 +1,10 @@
 ABBR_FORCE=1
 ABBR_QUIET=1
 
-abbr -S ls="exa" > /dev/null
-abbr -S la="exa -a" > /dev/null
-abbr -S ll="exa -al" > /dev/null
-abbr -S tree="exa --tree" > /dev/null
+abbr -S ls="eza" > /dev/null
+abbr -S la="eza -a" > /dev/null
+abbr -S ll="eza -al" > /dev/null
+abbr -S tree="eza --tree" > /dev/null
 abbr -S mkdir="mkdir -p" > /dev/null
 abbr -S less="less -r" > /dev/null
 abbr -S cat="bat -pP" > /dev/null
