@@ -11,6 +11,7 @@ cask "pycharm-ce"
 cask "raycast"
 cask "the-unarchiver"
 cask "visual-studio-code"
+cask "warp"
 cask "zoom"
 
 brew "asdf"
