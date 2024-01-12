@@ -4,6 +4,7 @@ tap "homebrew/core"
 
 cask "alfred"
 cask "font-fira-code-nerd-font" # font for terminal
+cask "hiddenbar"
 cask "iterm2"
 cask "intellij-idea-ce"
 cask "pycharm-ce"

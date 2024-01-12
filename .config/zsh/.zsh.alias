@@ -3,7 +3,7 @@ ABBR_QUIET=1
 
 abbr -S ls="exa" > /dev/null
 abbr -S la="exa -a" > /dev/null
-abbr -S ll="exa --al" > /dev/null
+abbr -S ll="exa -al" > /dev/null
 abbr -S tree="exa --tree" > /dev/null
 abbr -S mkdir="mkdir -p" > /dev/null
 abbr -S less="less -r" > /dev/null

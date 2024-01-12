@@ -40,7 +40,7 @@ zstyle ':completion:*:warnings' format 'No matches for:'$fg[yellow]' %d'${reset_
 zstyle ':completion:messages' format '%d'
 
 # path
-eval $($HOMEBREW_PREFIX/bin/brew shellenv)
+eval $(/opt/homebrew/bin/brew shellenv)
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 source $HOMEBREW_PREFIX/share/zsh-abbr/zsh-abbr.zsh
