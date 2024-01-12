@@ -27,8 +27,8 @@ find $DOTPATH/.config -type f | xargs -IXXX ln -sf $DOTPATH/XXX ~/XXX
 # setup homebrew
 if [ $(uname) = 'Darwin' ]; then
   command -v brew >/dev/null 2>&1 || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-  brew update --verbose
-  brew upgrade --verbose
-  brew bundle --file ~/.config/brewfile/Brewfile --verbose
-  brew cleanup --verbose
+  /opt/homebrew/bin/brew update --verbose
+  /opt/homebrew/bin/brew upgrade --verbose
+  /opt/homebrew/bin/brew bundle --file ~/.config/brewfile/Brewfile --verbose
+  /opt/homebrew/bin/brew cleanup --verbose
 fi
