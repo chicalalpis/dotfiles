@@ -24,11 +24,9 @@ brew "git-delta"
 brew "git-interactive-rebase-tool"
 brew "jq"
 brew "mas"
-brew "olets/tap/zsh-abbr"
 brew "ripgrep"
 brew "zoxide"
 brew "zsh-completions"
 brew "zsh-syntax-highlighting"
 
-mas "Amphetamine", id: 937984704
 mas "RunCat", id: 1429033973

@@ -1,14 +1,8 @@
-ABBR_FORCE=1
-ABBR_QUIET=1
-
-abbr -S ls="eza" > /dev/null
-abbr -S la="eza -a" > /dev/null
-abbr -S ll="eza -al" > /dev/null
-abbr -S tree="eza --tree" > /dev/null
-abbr -S mkdir="mkdir -p" > /dev/null
-abbr -S less="less -r" > /dev/null
-abbr -S cat="bat -pP" > /dev/null
-abbr -S grep="rg" > /dev/null
-
-ABBR_FORCE=0
-ABBR_QUIET=0
+alias ls="eza"
+alias la="eza -a"
+alias ll="eza -al"
+alias tree="eza --tree"
+alias mkdir="mkdir -p"
+alias less="less -r"
+alias cat="bat -pP"
+alias grep="rg"
